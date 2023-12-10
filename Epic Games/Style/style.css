@@ -1,0 +1,983 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  background-color: #141314;
+}
+
+/* Nav(Alpha) Start */
+
+.main-nav {
+  height: 10vh;
+  width: 100%;
+  background-color: #18181c;
+}
+.eg-logo {
+  margin-top: 23px;
+  margin-left: 28px;
+  cursor: pointer;
+  width: 5%;
+  height: 100%;
+}
+.list1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+img {
+  width: 25px;
+  height: 29px;
+}
+#angle {
+  color: gray;
+  transform: rotate(90deg);
+  font-size: 15px;
+  margin: -27px 16px;
+  margin-left: 25px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#check {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#angle:hover {
+  margin-top: -23px;
+  transition: 0.2;
+  color: white;
+}
+#check:checked ~ label .fa-angle-right {
+  color: white;
+  transform: rotate(270deg);
+  transition: 0.4s;
+}
+#check:checked ~ .nav-menu {
+  visibility: visible;
+}
+.logo {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.logo2 {
+  width: 23.2px;
+  height: 20px;
+}
+.logo3 {
+  width: 21px;
+  height: 21px;
+}
+.logo4 {
+  width: 23.5px;
+  height: 21px;
+}
+.logo5 {
+  height: 20px;
+  width: 23.4px;
+}
+.sub-menu-item {
+  display: flex;
+  width: 82%;
+  height: 9%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.sub-menu-item2 {
+  width: 105%;
+  height: 9%;
+  margin-left: 0;
+}
+.sub-menu-text {
+  font-size: 15px;
+  color: #cacacf;
+  font-weight: 600;
+  padding: 5px 10px;
+  line-height: 2.2;
+  display: flex;
+}
+.sub-menu-text2 {
+  margin-left: 0;
+  padding: 5px;
+  width: 100%;
+  padding-left: 13px;
+}
+.epic-image {
+  width: 18px;
+  height: 23px;
+  margin-right: 8px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.sub-menu-item:hover {
+  background-color: #404044;
+  transition: 0.2s;
+}
+.nav-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 44.5%;
+  height: 75.5%;
+  background-color: #202024;
+  position: absolute;
+  border-radius: 15px;
+  top: 88px;
+  left: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 32px 16px, rgba(0, 0, 0, 0.1) 0px 16px 8px,
+    rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 4px 2px,
+    rgba(0, 0, 0, 0.1) 0px 2px 1px;
+  color: white;
+  font-family: sans-serif;
+  cursor: default;
+  padding: 30px;
+  visibility: hidden;
+  z-index: 4;
+}
+.nav-border {
+  border-left: 2px solid #303034;
+  width: 1%;
+  height: 48%;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+ul {
+  display: flex;
+}
+svg {
+  width: 54px;
+  height: 32px;
+  margin-top: 20px;
+  margin-right: 16px;
+}
+.nav-section {
+  color: rgb(172, 172, 172);
+  font-size: 14px;
+  padding: 4px 16px;
+  font-family: sans-serif;
+  line-height: 2;
+  width: 100%;
+  height: 32px;
+  background-color: rgb(23, 23, 28);
+  margin-top: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.nav-section:hover {
+  background-color: #404044;
+  color: white;
+  transition: 0.3s;
+}
+.margin {
+  width: 107%;
+}
+.languages {
+  margin-left: 640px;
+}
+#earth {
+  color: #98989b;
+  font-size: 22px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+#earth:hover {
+  color: rgb(219, 219, 219);
+  transition: 0.3s;
+}
+.user {
+  margin-left: 20px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #303034;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.fa-user {
+  margin-left: 10px;
+  padding-top: 8px;
+  color: #9a9a9f;
+}
+.user:hover .fa-user {
+  color: white;
+  transition: 0.3s;
+}
+.download {
+  width: 100px;
+  height: 30px;
+  background-color: #26bbff;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #2c2c31;
+  font-family: sans-serif;
+  padding-top: 6px;
+  cursor: pointer;
+}
+.text-download {
+  font-weight: 550;
+  font-size: 15px;
+}
+.download:hover {
+  background-color: #61cdff;
+  transition: 0.3s;
+}
+.room {
+  width: 12.3%;
+  height: 8%;
+  position: absolute;
+  right: 70px;
+  top: 45px;
+  visibility: hidden;
+  z-index: 4;
+}
+.language {
+  position: absolute;
+  right: 65px;
+  top: 90px;
+  width: 13%;
+  height: 80%;
+  background-color: #202024;
+  color: #838282;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 20px 10px;
+  font-weight: bold;
+  cursor: default;
+  visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 32px 16px, rgba(0, 0, 0, 0.1) 0px 16px 8px,
+    rgba(0, 0, 0, 0.1) 0px 8px 4px, rgba(0, 0, 0, 0.1) 0px 4px 2px,
+    rgba(0, 0, 0, 0.1) 0px 2px 1px;
+  z-index: 4;
+}
+.language p {
+  width: 100%;
+  height: 6.4%;
+  border-radius: 20px;
+  padding: 8px 10px;
+}
+.language i {
+  font-size: 20px;
+  color: #98989b;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  margin-top: 23px;
+}
+.language-hover:hover {
+  transition: 0.3s;
+  background-color: #404044;
+  color: #e6e6ea;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#earth:hover ~ .language {
+  visibility: visible;
+}
+#earth:hover ~ .room {
+  visibility: visible;
+}
+.room:hover ~ .language {
+  visibility: visible;
+}
+.room:hover {
+  visibility: visible;
+}
+.language:hover {
+  visibility: visible;
+}
+
+/* Nav(Alpha) End */
+
+.column1 {
+  width: 47%;
+  height: 100%;
+}
+.column2 {
+  width: 50%;
+  height: 100%;
+}
+.heading {
+  font-size: 20px;
+  font-weight: 750;
+  color: #ffffff;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.heading2 {
+  margin-top: 50px;
+}
+.heading3 {
+  margin-left: 10px;
+}
+
+/* Nav(Beta) Start */
+
+.sub-nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #141314;
+}
+.content {
+  margin: 0 170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #141314;
+}
+.fa-magnifying-glass {
+  color: gray;
+  font-size: 12px;
+  margin-right: 13px;
+}
+.search {
+  background-color: rgb(32 32 32);
+  outline: none;
+  border: rgb(32 32 32);
+  color: white;
+}
+.search::placeholder {
+  color: #aaaaaa;
+  font-family: sans-serif;
+  letter-spacing: 0.3px;
+}
+.search-bar {
+  max-width: 230px;
+  width: 230px;
+  height: 40px;
+  background-color: rgb(32 32 32);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.sub-nav-text {
+  margin-left: 30px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.color-white {
+  color: white;
+  cursor: default;
+}
+.sub-nav-text:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+/* Nav(Beta) End */
+
+/* Header Start */
+
+.header {
+  margin: 0 170px;
+  width: 74%;
+  display: flex;
+  height: 67vh;
+}
+.cover {
+  width: 81%;
+  height: 100%;
+  background-image: url(../image/egs-fortnite-chapter-5-season-1-carousel-desktop-1920x1080-55fe87ee88ef.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 15px;
+  position: relative;
+}
+.linear-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(11, 11, 11, 0) 0%, #0b0b0b93 100%);
+  border-radius: 15px;
+}
+.Fortnite {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30px;
+  top: 120px;
+}
+.dead-by-daylight {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  visibility: hidden;
+}
+.The-Game-Awards {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  visibility: hidden;
+}
+.avatar {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  visibility: hidden;
+}
+.Homeworld3 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  visibility: hidden;
+}
+.destiny2 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  visibility: hidden;
+}
+.transparent-box {
+  width: 180px;
+  height: 110px;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.Fortnite-transparent-box {
+  background-image: url(../image/egs-fortnite-chapter-5-season-1-carousel-logo-350x100-bf2fe5c3826a.png);
+  width: 220px;
+  height: 50px;
+  background-size: cover;
+  margin-top: 16px;
+  margin-bottom: 35px;
+}
+.The-Game-Awards-transparent-box {
+  background-image: url(../image/tga-carousel-logo-350x107-1efb99cf39c9.png);
+  width: 200px;
+  height: 60px;
+  background-size: cover;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.Homeworld3-transparent-box {
+  background-image: url(../image/egs-homeworld-3-logo-3840x2160-f528e2d9421b.png);
+  width: 200px;
+  height: 110px;
+  background-size: cover;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.avatar-transparent-box {
+  background-image: url(../image/egs-avatar-frontiers-of-pandora-carousel-logo-333x100-3d052fc3c45b.png);
+  width: 200px;
+  height: 60px;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.dead-by-daylight-transparent-box {
+  background-image: url(../image/egs-dead-by-daylight-chucky-carousel-logo-350x100-b5942219d6e8.png);
+}
+.destiny2-transparent-box {
+  background-image: url(../image/en-egs-destiny-2-season-23-carousel-logo-350x100-edb915661c75.png);
+  width: 210px;
+  height: 60px;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.linear-gradient h3 {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 1.3333;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.linear-gradient h4 {
+  display: block;
+  font-size: 15.5px;
+  letter-spacing: 0.5px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  width: 80%;
+}
+.linear-gradient h2 {
+  display: block;
+  font-size: 14.5px;
+  letter-spacing: 0.5px;
+  line-height: 1.3333;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.destiny2 h2,
+.Fortnite h2 {
+  font-size: 16px;
+}
+.bold {
+  font-size: 18px;
+  display: inline;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+.bold2 {
+  margin-left: 5px;
+}
+.buy {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  float: left;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 18px 0;
+  transition: 0.2s;
+}
+.buy2 {
+  margin-top: 15px;
+}
+.buy3 {
+  width: 175px;
+}
+.buy:hover {
+  color: rgba(0, 0, 0, 0.829);
+  transition: 0.3s;
+}
+.Wishlist {
+  width: 160px;
+  height: 50px;
+  float: left;
+  margin-left: 10px;
+  text-decoration: none;
+  padding-left: 20px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.circle {
+  display: inline-block;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  transform: translateY(15px);
+}
+.fa-plus {
+  font-size: 10px;
+  text-decoration: none;
+  transform: translateX(3px);
+  color: white;
+  position: relative;
+  top: -1.8px;
+  left: 0.8px;
+}
+.Wishlist p {
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 400;
+  transform: translateY(18px);
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(13px);
+  margin-left: 3px;
+}
+.Wishlist:hover {
+  background-color: rgba(255, 255, 255, 0.199);
+  transition: 0.4s;
+}
+.game-title {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0;
+  cursor: pointer;
+  margin-top: 3px;
+  position: relative;
+}
+.game-title:hover {
+  background-color: #ffffff25;
+  transition: 0.3s;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 17.5%;
+  height: 100%;
+}
+.title-games-image {
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 83%;
+  border-radius: 8px;
+}
+.title-games-text {
+  color: white;
+  font-size: 11px;
+  font-family: sans-serif;
+  padding-top: 6px;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  position: absolute;
+  right: 18px;
+}
+.title-games-text2 {
+  line-height: 3.2;
+  position: absolute;
+  left: 60px;
+  right: 0;
+}
+.dead-by-daylight-image {
+  background-image: url(../image/egs-dead-by-daylight-chucky-carousel-thumb-1080x1920-f2badcb38e47.jpg);
+}
+.The-Game-Awards-image {
+  background-image: url(../image/en-tga-carousel-thumbnail-1200x1600-23bd2d58faf3.jpg);
+}
+.Homeworld3-image {
+  background-image: url(../image/egs-homeworld-3-epic-thumb-1200x1600-1200x1600-ac4f7a4b136c.jpg);
+}
+.avatar-image {
+  background-image: url(../image/egs-avatar-frontiers-of-pandora-thumb-1200x1600-873f5baecc2f.jpg);
+}
+.destiny2-image {
+  background-image: url(../image/en-egs-destiny-2-season-23-carousel-thumb-1200x1600-a3023eefd46f.jpg);
+}
+.Fortnite-image {
+  background-image: url(../image/egs-fortnite-chapter-5-season-1-carousel-thumbnail-1200x1600-09ee8db90014\ -\ Copy.jpg);
+}
+.header input {
+  width: 0;
+  height: 0;
+}
+#radio1:checked ~ .column .liner1,
+#radio2:checked ~ .column .liner2,
+#radio3:checked ~ .column .liner3,
+#radio4:checked ~ .column .liner4,
+#radio5:checked ~ .column .liner5,
+#radio6:checked ~ .column .liner6 {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff25;
+}
+#radio1:checked ~ .column .liner1 .title-games-image,
+#radio2:checked ~ .column .liner2 .title-games-image,
+#radio3:checked ~ .column .liner3 .title-games-image,
+#radio4:checked ~ .column .liner4 .title-games-image,
+#radio5:checked ~ .column .liner5 .title-games-image,
+#radio6:checked ~ .column .liner6 .title-games-image {
+  -webkit-transition: 200ms cubic-bezier(0.17, 0.17, 0.23, 1);
+  width: 43px;
+  height: 83.5%;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.17, 0.17, 0.23, 1);
+  transition-delay: 0.5s;
+  transition: 200ms cubic-bezier(0.17, 0.17, 0.23, 1);
+  box-shadow: 0 10px 10px rgba(37, 37, 37, 0.849);
+}
+#radio1:checked ~ .column .liner1 .bg-color,
+#radio2:checked ~ .column .liner2 .bg-color,
+#radio3:checked ~ .column .liner3 .bg-color,
+#radio4:checked ~ .column .liner4 .bg-color,
+#radio5:checked ~ .column .liner5 .bg-color,
+#radio6:checked ~ .column .liner6 .bg-color {
+  width: 100%;
+  visibility: visible;
+  transition: 8s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+  border-radius: 7px;
+}
+.bg-color {
+  background-color: rgba(37, 37, 37, 0.849);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2%;
+  height: 100%;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  visibility: hidden;
+  z-index: -1;
+}
+#radio6:checked ~ .cover .linear-gradient .Fortnite,
+#radio2:checked ~ .cover .linear-gradient .Fortnite,
+#radio3:checked ~ .cover .linear-gradient .Fortnite,
+#radio4:checked ~ .cover .linear-gradient .Fortnite,
+#radio5:checked ~ .cover .linear-gradient .Fortnite {
+  visibility: hidden;
+}
+#radio5:checked ~ .cover {
+  background-image: url(../image/egs-dead-by-daylight-chucky-carousel-desktop-1920x1080-8f85c6417e33.jpg);
+  width: 81%;
+  height: 100%;
+  background-size: cover;
+  transition-delay: 0.3s;
+  transition: 0.2s;
+}
+#radio2:checked ~ .cover {
+  background-image: url(../image/tga-desktop-carousel-asset-1920x1080-0c910128575f.jpg);
+  width: 81%;
+  height: 100%;
+  background-size: cover;
+  transition-delay: 0.3s;
+  transition: 0.2s;
+}
+#radio3:checked ~ .cover {
+  background-image: url(../image/egs-homewrold-3-carousel-desktop-1920x1080-0ba8d22503a4.jpg);
+  width: 81%;
+  height: 100%;
+  background-size: cover;
+  transition-delay: 0.3s;
+  transition: 0.2s;
+}
+#radio4:checked ~ .cover {
+  background-image: url(../image/egs-avatar-frontiers-of-pandora-carousel-desktop-1248x702-9346d193b313.jpg);
+  width: 81%;
+  height: 100%;
+  background-size: cover;
+  transition-delay: 0.3s;
+  transition: 0.2s;
+}
+#radio6:checked ~ .cover {
+  background-image: url(../image/egs-destiny-2-season-23-carousel-desktop-1920x1080-4733c6553a99.jpg);
+  width: 81%;
+  height: 100%;
+  background-size: cover;
+  transition-delay: 0.3s;
+  transition: 0.2s;
+}
+#radio1:checked ~ .cover {
+  background-image: url(../image/egs-fortnite-chapter-5-season-1-carousel-desktop-1920x1080-55fe87ee88ef.jpg);
+  width: 81%;
+  height: 100%;
+  background-size: cover;
+  transition-delay: 0.3s;
+  transition: 0.2s;
+}
+#radio1:checked ~ .cover .linear-gradient .Fortnite {
+  visibility: visible;
+  transition: 0.2s;
+}
+#radio2:checked ~ .cover .linear-gradient .The-Game-Awards {
+  visibility: visible;
+  transition: 0.2s;
+}
+#radio3:checked ~ .cover .linear-gradient .Homeworld3 {
+  visibility: visible;
+  transition: 0.2s;
+}
+#radio4:checked ~ .cover .linear-gradient .avatar {
+  visibility: visible;
+  transition: 0.2s;
+}
+#radio5:checked ~ .cover .linear-gradient .dead-by-daylight {
+  visibility: visible;
+  transition: 0.2s;
+}
+#radio6:checked ~ .cover .linear-gradient .destiny2 {
+  visibility: visible;
+  transition: 0.2s;
+}
+
+/* Header End */
+
+/* Section1 Start */
+
+.section1 {
+  width: 74%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  margin: 50px 170px;
+}
+.part1 {
+  width: 100%;
+  height: 4%;
+  display: flex;
+  margin-bottom: 18px;
+}
+.part2 {
+  width: 100%;
+  height: 63%;
+  display: flex;
+}
+.section1-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  height: 14px;
+  cursor: pointer;
+}
+.section1-title i {
+  font-size: 8px;
+  margin-top: 6px;
+  margin-left: 6px;
+  color: rgb(151, 151, 151);
+  transition: 0.2s;
+}
+.section1-title:hover i {
+  margin-left: 12px;
+  transition: 0.2s;
+}
+.angle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(32, 32, 32);
+}
+.angle-left {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  cursor: default;
+}
+.angle-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.2s;
+}
+.angle-right:hover {
+  background-color: #99979732;
+  transition: 0.2s;
+}
+.row i {
+  margin-top: 9.8px;
+  margin-right: 11px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+#left {
+  margin-right: 12px;
+  color: gray;
+  margin-top: 9px;
+}
+.overflow {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+}
+.overflow-box {
+  width: 19%;
+  height: 100%;
+}
+.overflow-games {
+  width: 100%;
+  height: 70%;
+  background-image: url(../image/dr-fetus-mean-meat-machine-19ifk.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+.overflow-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.overflow-games:hover .overflow-bg-color {
+  visibility: visible;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+  z-index: 1;
+}
+.Wishlist-button {
+  z-index: 3;
+  right: 11px;
+  top: -2px;
+  visibility: hidden;
+  margin-top: -2px;
+  margin-right: 11px;
+  transition: 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: rgba(22, 21, 21, 0);
+  float: right;
+  z-index: 3;
+}
+.overflow-box:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+#plus {
+  color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.overflow-box:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.tooltip {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(43, 42, 42);
+  font-family: sans-serif;
+  border-radius: 5px;
+  font-weight: 600;
+  top: -10px;
+  left: 100px;
+  color: white;
+  text-align: center;
+  line-height: 3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  word-spacing: -1px;
+  display: none;
+}
+.Wishlist ~ .tooltip {
+  display: block;
+}
