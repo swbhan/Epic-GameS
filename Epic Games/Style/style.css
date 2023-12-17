@@ -153,7 +153,7 @@ img {
 ul {
   display: flex;
 }
-svg {
+.main-nav svg {
   width: 54px;
   height: 32px;
   margin-top: 20px;
@@ -209,7 +209,7 @@ svg {
   cursor: pointer;
 }
 .fa-user {
-  margin-left: 10px;
+  margin-left: 9px;
   padding-top: 8px;
   color: #9a9a9f;
 }
@@ -610,7 +610,7 @@ svg {
   transform: translateX(3px);
   color: white;
   position: relative;
-  top: -1.8px;
+  top: -2px;
   left: 0.8px;
 }
 .Wishlist p {
@@ -734,7 +734,7 @@ svg {
   border-radius: 7px;
 }
 .bg-color {
-  background-color: rgba(37, 37, 37, 0.849);
+  background-color: rgb(32, 32, 32);
   position: absolute;
   left: 0;
   top: 0;
@@ -829,26 +829,44 @@ svg {
 
 /* Section1 Start */
 
-.section1 {
-  width: 74%;
-  height: 600px;
+.Holiday-Sale-Spotlight {
+  width: 76%;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   z-index: 2;
-  margin: 50px 170px;
+  margin: 50px auto;
+  position: relative;
 }
-.part1 {
+.Section1-part1 {
   width: 100%;
-  height: 4%;
+  height: 5%;
   display: flex;
-  margin-bottom: 18px;
+  margin-top: 10px;
 }
-.part2 {
+.Section1-part2 {
   width: 100%;
-  height: 63%;
+  height: 44%;
+  display: flex;
+  margin-bottom: 50px;
+}
+.Section1-part3 {
+  height: 51%;
+  width: 100%;
+  position: relative;
   display: flex;
 }
-.section1-title {
+.Section1-part2:hover ~ .Section1-part3 {
+  margin-top: 421px;
+}
+.Section1-part2:hover {
+  position: absolute;
+  height: 52.1%;
+}
+.Section1-part2:hover .overflow-games {
+  margin-top: 50px;
+}
+.Holiday-Sale-Spotlight-title {
   color: white;
   font-family: sans-serif;
   font-size: 19px;
@@ -857,14 +875,14 @@ svg {
   height: 14px;
   cursor: pointer;
 }
-.section1-title i {
+.Holiday-Sale-Spotlight-title i {
   font-size: 8px;
   margin-top: 6px;
   margin-left: 6px;
   color: rgb(151, 151, 151);
   transition: 0.2s;
 }
-.section1-title:hover i {
+.Holiday-Sale-Spotlight-title:hover i {
   margin-left: 12px;
   transition: 0.2s;
 }
@@ -874,19 +892,64 @@ svg {
   border-radius: 50%;
   background-color: rgb(32, 32, 32);
 }
-.angle-left {
+.angle-left,
+.angle-left2,
+.angle-left3,
+.angle-left4 {
   position: absolute;
   top: 0;
-  right: 40px;
+  right: 55px;
+  transition: 0.2s;
+  cursor: default;
+  z-index: -2;
+}
+.guard {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   cursor: default;
 }
-.angle-right {
+.guard2 {
+  z-index: 6;
   position: absolute;
   top: 0;
-  right: 0;
-  transition: 0.2s;
+  right: 7px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: default;
+  display: none;
 }
-.angle-right:hover {
+#checkbox4:checked ~ .Section1-part1 .row .guard2 {
+  display: block;
+}
+.angle-right,
+.angle-right2,
+.angle-right3,
+.angle-right4,
+.angle-right5 {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+}
+.angle-right2,
+.angle-left2,
+.angle-right3,
+.angle-left3,
+.angle-right4,
+.angle-left4,
+.angle-right5 {
+  display: none;
+}
+.angle-right:hover,
+.angle-right2:hover,
+.angle-right3:hover,
+.angle-right4:hover {
   background-color: #99979732;
   transition: 0.2s;
 }
@@ -898,52 +961,113 @@ svg {
   font-size: 12px;
 }
 #left {
-  margin-right: 12px;
   color: gray;
-  margin-top: 9px;
+  transition: 1s;
+}
+#right {
+  color: white;
+  transition: 1s;
 }
 .overflow {
   width: 100%;
   height: 100%;
-  overflow-y: hidden;
+  overflow-y: visible;
   display: flex;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 5;
+  transition: 1s;
 }
 .overflow-box {
   width: 19%;
   height: 100%;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.opening {
+  width: 590px;
+}
+.category {
+  display: flex;
+  transition: 1s;
 }
 .overflow-games {
-  width: 100%;
-  height: 70%;
-  background-image: url(../image/dr-fetus-mean-meat-machine-19ifk.jpg);
+  width: 187px;
+  height: 264px;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
+  position: relative;
+}
+.category h2 {
+  font-family: sans-serif;
+  font-size: 9.5px;
+  color: gray;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.category h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
+}
+.discount {
+  width: 41px;
+  height: 23px;
+  background-color: rgb(0, 116, 228);
+  align-items: center;
+  color: white;
+  border-radius: 4px;
+  margin-top: 13px;
+  padding: 0 8px;
+  line-height: 2.4;
+}
+.discount-text {
+  font-size: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.category h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+span {
+  color: gray;
+}
+.flex {
+  display: flex;
+  line-height: 1.8;
 }
 .overflow-bg-color {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  border-radius: 5px;
 }
 .overflow-games:hover .overflow-bg-color {
   visibility: visible;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
-  z-index: 1;
 }
 .Wishlist-button {
-  z-index: 3;
   right: 11px;
-  top: -2px;
+  top: 0;
+  position: absolute;
   visibility: hidden;
-  margin-top: -2px;
-  margin-right: 11px;
   transition: 0.2s;
   border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(22, 21, 21, 0);
-  float: right;
-  z-index: 3;
+}
+.Wishlist-button:hover ~ .overflow-bg-color {
+  visibility: hidden;
 }
 .overflow-box:hover .Wishlist-button {
   transition: 0.2s;
@@ -961,13 +1085,13 @@ svg {
   color: white;
 }
 .tooltip {
-  width: 150px;
+  width: 140px;
   height: 40px;
-  background-color: rgb(43, 42, 42);
+  background-color: rgb(36, 34, 34);
   font-family: sans-serif;
   border-radius: 5px;
   font-weight: 600;
-  top: -10px;
+  top: -50px;
   left: 100px;
   color: white;
   text-align: center;
@@ -976,8 +1100,383 @@ svg {
   letter-spacing: 0.5px;
   position: absolute;
   word-spacing: -1px;
+  visibility: hidden;
+}
+.tooltip2 {
+  left: 50px;
+}
+.Wishlist-button:hover ~ .tooltip {
+  visibility: visible;
+}
+.Holiday-Sale-Spotlight input {
   display: none;
 }
-.Wishlist ~ .tooltip {
+#checkbox1:checked ~ .Section1-part2 .overflow .category {
+  transform: translateX(-75vw);
+  transition: 1s;
+}
+#checkbox2:checked ~ .Section1-part2 .overflow .category {
+  transform: translateX(-149.8vw);
+  transition: 1s;
+}
+#checkbox3:checked ~ .Section1-part2 .overflow .category {
+  transform: translateX(-224.2vw);
+  transition: 1s;
+}
+#checkbox4:checked ~ .Section1-part2 .overflow .category {
+  transform: translateX(-254.6vw);
+  transition: 1s;
+}
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-left #left {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-left:hover,
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-left2:hover,
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-left3:hover,
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-left4:hover {
+  background-color: #99979732;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-left {
+  z-index: 1;
+}
+#checkbox1:checked ~ .Section1-part1 .row .selector .angle-right2,
+#checkbox2:checked ~ .Section1-part1 .row .selector .angle-left2 {
   display: block;
+  z-index: 2;
+}
+#checkbox2:checked ~ .Section1-part1 .row .selector .angle-right3,
+#checkbox3:checked ~ .Section1-part1 .row .selector .angle-left3 {
+  display: block;
+  z-index: 3;
+}
+#checkbox3:checked ~ .Section1-part1 .row .selector .angle-right4,
+#checkbox4:checked ~ .Section1-part1 .row .selector .angle-left4,
+#checkbox4:checked ~ .Section1-part1 .row .selector .angle-right5 {
+  display: block;
+  z-index: 4;
+}
+#checkbox4:checked ~ .Section1-part1 .row .selector #right {
+  color: gray;
+  transition: 2s;
+}
+.witchfire {
+  background-image: url(../image/witchfire-obly4.jpg);
+}
+.Ghostrunner-2 {
+  background-image: url(../image/EGS_Ghostrunner2_OneMoreLevel_S2_1200x1600-12ae7597b946ad94ac75680eb735be07.jpg);
+}
+.Hogwarts-Legacy {
+  background-image: url(../image/EGS_HogwartsLegacy_AvalancheSoftware_S2_1200x1600-2bb94423bf1c7e2fca10577d9f2878b9.jpg);
+}
+.Lords-of-the-Fallen {
+  background-image: url(../image/EGS_LordsoftheFallen_HEXWORKS_S2_1200x1600-2976a6dd116b4f9071f5714d4dabd9a5.jpg);
+}
+.The-Crew™-Motorfest-Standard-Edition {
+  background-image: url(../image/EGST_StorePortrait_1200x1600_1200x1600-4e8995358cccb9b278b7556651242032.jpg);
+}
+.Remnant-2 {
+  background-image: url(../image/c6758576-ddd6-4601-b4bb-2769df3c7af3_1200x1600-1486abbf9a713a1d20d7facac9a34195.jfif);
+}
+.Mortal-Kombat-1 {
+  background-image: url(../image/EGS_MortalKombat1_NetherRealmStudios_S4_1200x1600-076e67292bb57f11ebb4465b7e74a65e.jfif);
+}
+.PAYDAY-3 {
+  background-image: url(../image/EGS_PAYDAY3_Starbreeze_S2_1200x1600-80e39c5ee902cba196b484464276c8b7.jfif);
+}
+.Red-Dead-Redemption-2 {
+  background-image: url(../image/RDR2PC1227_Epic\ Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg);
+}
+.Dead-by-Daylight {
+  background-image: url(../image/EGS_DeadbyDaylightUltimateEdition_BehaviourInteractive_Editions_S2_1200x1.jfif);
+}
+.The-Last-of-Us™-Part-I {
+  background-image: url(../image/EGS_TheLastofUsPartI_NaughtyDogLLC_S2_1200x1600-41d1b88814bea2ee8cb7986ec24713e0.jfif);
+}
+.Marvels-Spider-Man-Remastered {
+  background-image: url(../image/EGS_MarvelsSpiderManRemastered_InsomniacGamesNixxesSoftware_S2_1200x1600-7642.jfif);
+}
+.The-Outlast-Trials {
+  background-image: url(../image/EGS_TheOutlastTrials_RedBarrels_S2-1200x1600-c70676de7925195513fa7bc4bc2f1d9b.jpg);
+}
+.DEATH-STRANDING-DIRECTORs-CUT {
+  background-image: url(../image/EGS_DeathStrandingDirectorsCut_KOJIMAPRODUCTIONS_S4_1200x1600-5f99e16507795f9b497716b470.jfif);
+}
+.KINGDOM-HEARTS-III {
+  background-image: url(../image/EGS_KINGDOMHEARTSIIIReMindDLC_SquareEnix_S6-1200x1600-54d8b062dc7488c71874fe2455d6c2bd.jpg);
+}
+.LEGO®-2-Drive {
+  background-image: url(../image/EGS_LEGO2KDrive_VisualConceptsEntertainment_S2_1200x1600-a20702ad15c2a227715c014040d37776.jfif);
+}
+.KINGDOM-HEARTS {
+  background-image: url(../image/EGS_KINGDOMHEARTSHD1525ReMIX_SquareEnix_S6-1200x1600-132fc1f63bf40a41cddbff3bab7acc52.jpg);
+}
+.Dead-Space {
+  background-image: url(../image/EGS_DeadSpace_MotiveStudio_S2_1200x1600-551c16d068cab45b02149e15a43c2413.jfif);
+}
+.Marvels-Spider-Man-Miles-Morales {
+  background-image: url(../image/EGS_MarvelsSpiderManMilesMorales_InsomniacGamesNixxesSoftware_S2_1200x1600-.jfif);
+}
+.Star-Trek-Resurgence {
+  background-image: url(../image/EGS_StarTrekResurgence_Brunerhouse_S2_1200x1600-bfb0c4c9d04e8df95098b7d9fe8ce1b5.jfif);
+}
+.God-of-War {
+  background-image: url(../image/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d.jfif);
+}
+.PC-Building-Simulator-2 {
+  background-image: url(../image/S2-EN_1200x1600-5e2457dda0d1e1b219b870812a74ccf0.jfif);
+}
+.holiday {
+  width: 100%;
+  height: 100%;
+  background-color: #26bbff;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.epic-reward,
+.holiday-sale {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin-right: 30px;
+}
+.epic-reward-image {
+  background-image: url(../image/en-rewards-boosted-breaker-asset-v3-70dcac343dce.avif);
+}
+.holiday-sale-image {
+  background-image: url(../image/holiday-in-game-events-article-share-image-1920x1080-v4-54c174c04fa8.avif);
+}
+.part3-bg-color {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #ffffff00, #ffffff00);
+}
+.holiday:hover .part3-bg-color {
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.Section1-part3 h1 {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.Section1-part3 p {
+  color: gray;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-top: 13px;
+  margin-left: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.Section1-part3 h2 {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  width: 80px;
+}
+.holiday-sale h2 {
+  width: 90px;
+}
+.Section1-part3 h2:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Section1 End */
+
+/* Section2 Start */
+
+.Developer-Spotlight {
+  height: 140vh;
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+.section2-part1 {
+  margin-bottom: 50px;
+}
+.section2-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.Alan-Wake-2 {
+  background-image: url(../image/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa.jfif);
+}
+.Alan-Wake-2-Deluxe-Edition {
+  background-image: url(../image/EGS_AlanWake2DeluxeEdition_RemedyEntertainment_Editions_S2_1200x1600-db032e8c839da2be59801023a4cdf083.jfif);
+}
+.Alan-Wake’s-American-Nightmare {
+  background-image: url(../image/AlanWake_AN_Store_Portrait_Portrait-1280x1420-9ffeb4efd25401f9999aa132f60c3ef3_1200x1600-3ab26e7b70b34dd41228818f353f1.jfif);
+}
+.awr-transparent {
+  background-image: url(../image/Alan_Wake_American_Nightmare_logo-2000x893-c8b2c2f751d25a6d5a59a490d1815fbc.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+.Control {
+  background-image: url(../image/Control_Portrait_Storefront_1200X1600_1200x1600-456c920cae7a0aa9b36670cd5e1237a1.jfif);
+}
+.Alan-Wake-Remastered {
+  background-image: url(../image/en_Remedy_DEER_S2_1200x1600_1200x1600-8024b0d13e7a3f3888cb27df87cf263f.jfif);
+}
+.section2-part2 {
+  width: 98%;
+  height: 70%;
+  background-color: rgb(42 42 42);
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 5px;
+}
+.section2-part2-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  line-height: 1.4;
+  align-items: center;
+  float: left;
+}
+.section2-part2 svg {
+  width: 35px;
+  height: 35px;
+  margin-right: 14px;
+}
+.view-more-btn {
+  float: right;
+  width: 115px;
+  height: 34px;
+  border: 1px solid rgb(145 145 145);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.view-more-btn P {
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 2.8;
+  color: white;
+  cursor: pointer;
+}
+.view-more-btn:hover {
+  background-color: rgb(76 76 76);
+  transition: 0.2s;
+}
+.side-top {
+  display: block;
+  height: 15%;
+}
+.side-bottom {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.side-left,
+.side-right {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.side-left {
+  margin-right: 15px;
+}
+.ad {
+  width: 100%;
+  height: 65%;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.ad-Destiny2 {
+  background-image: url(../image/Free-Game-1_1920x1080-d0877708418750425ae12a2bddae3277.jfif);
+}
+.ad-footer {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(0, 120, 242);
+  padding: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.ad-footer h1 {
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.side-bottom h2 {
+  margin-top: 25px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.side-bottom h3 {
+  margin-top: 7px;
+  color: rgb(146, 145, 145);
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5;
+}
+.ad-mystery-game {
+  background-image: url(../image/Free-Game-2-teaser_1920x1080-38e83b583656dfb7b3d290a44cdfc6e8.jfif);
+}
+.ad-footer2 {
+  background-color: black;
+}
+.side-right h2 {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(209, 209, 209);
+}
+.section2-bg-color {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #ffffff00, #ffffff00);
+  display: flex;
+}
+.section2-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 5px;
+}
+.ad:hover .section2-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
 }
