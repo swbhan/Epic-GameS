@@ -1346,7 +1346,6 @@ span {
   width: 98%;
   height: 70%;
   background-color: rgb(42 42 42);
-  margin: 0 auto;
   padding: 30px 40px;
   border-radius: 5px;
 }
@@ -1464,13 +1463,6 @@ span {
 .section2-bg-color {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
-  background: linear-gradient(to bottom, #ffffff00, #ffffff00);
-  display: flex;
-}
-.section2-bg-color {
-  width: 100%;
-  height: 100%;
   visibility: hidden;
   border-radius: 5px;
 }
@@ -1490,6 +1482,8 @@ span {
   display: flex;
   margin: 50px auto;
   margin-top: 40px;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 .section3-title {
   color: white;
@@ -1497,8 +1491,8 @@ span {
   font-size: 19px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  width: 84%;
-  margin-left: 10px;
+  width: 83%;
+  height: 2%;
 }
 .btn-fortnite {
   float: right;
@@ -1506,6 +1500,8 @@ span {
   height: 30px;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 .btn-fortnite h1 {
   font-family: sans-serif;
@@ -1514,4 +1510,161 @@ span {
   color: white;
   text-align: center;
   line-height: 2.7;
+  cursor: pointer;
+}
+.btn-fortnite:hover {
+  border: 1px solid rgba(196, 196, 196, 0.637);
+}
+.fortnite-event {
+  width: 31.7%;
+  height: 35%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 50px;
+}
+.fortnite-event2 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.Experience {
+  width: 100%;
+  height: 65%;
+  background-color: #26bbff;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+}
+.lego-fortnite {
+  background-image: url(../image/FNJN_01_EGS_Launcher_Blade_2560x1440_2560x1440-9b2da247e66cc11c447d59784923efbd.jfif);
+}
+.rocket-racing {
+  background-image: url(../image/28RR_Launch_KeyArt_EGS_Blade_2560x1440_2560x1440-a135b6067cc5b54497e8bdf4fee721de.jfif);
+}
+.fortnite-festival {
+  background-image: url(../image/FNSP_01_EGS_Launcher_Blade_2560x1440_2560x1440-966445d9d0e9b389b765a8d3da6badb6.jfif);
+}
+.section3-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 5px;
+}
+.Experience:hover .section3-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.fortnite-event:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+#plus {
+  color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.fortnite-event:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.tooltip3 {
+  position: absolute;
+  left: 230px;
+  top: -50;
+}
+.fortnite-event h2 {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: rgb(146, 146, 146);
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.fortnite-event h3 {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgb(214, 214, 214);
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+.fortnite-event h1 {
+  color: rgb(214, 214, 214);
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-top: 15px;
+}
+.fortnit-ad,
+.fallguys-ad {
+  width: 48%;
+  height: 50%;
+}
+.fortnit-ad {
+  margin-right: 30px;
+}
+.fortnit-ad-image,
+.fallguys-ad-image {
+  width: 100%;
+  height: 70%;
+  background-color: #26bbff;
+  border-radius: 18px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.fortnit-ad-image {
+  background-image: url(../image/egs-fortnite-tmnt-breaker-1920x1080-d832741fe4ac.jpg);
+}
+.fallguys-ad-image {
+  background-image: url(../image/egs-fall-guys-fame-pass-7-breaker-1920x1080-106772628a4e.jpg);
+}
+.fallguys-ad-image:hover .section3-bg-color,
+.fortnit-ad-image:hover .section3-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.fallguys-ad h1,
+.fortnit-ad h1 {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.fallguys-ad p,
+.fortnit-ad p {
+  color: gray;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-top: 13px;
+  margin-left: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.fallguys-ad h2,
+.fortnit-ad h2 {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  width: 110px;
+  line-height: 1.3;
+}
+.fallguys-ad h2:hover,
+.fortnit-ad h2:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
