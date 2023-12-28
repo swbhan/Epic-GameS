@@ -230,6 +230,7 @@ ul {
   font-family: sans-serif;
   padding-top: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .text-download {
   font-weight: 550;
@@ -857,7 +858,7 @@ ul {
   display: flex;
 }
 .Section1-part2:hover ~ .Section1-part3 {
-  margin-top: 421px;
+  margin-top: 425px;
 }
 .Section1-part2:hover {
   position: absolute;
@@ -1011,9 +1012,10 @@ ul {
 }
 .category h3 {
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
   margin-top: 10px;
+  line-height: 1.3;
 }
 .discount {
   width: 41px;
@@ -1031,7 +1033,7 @@ ul {
   font-family: sans-serif;
   letter-spacing: 1px;
 }
-.category h1 {
+.flex h1 {
   color: white;
   font-family: sans-serif;
   font-size: 15px;
@@ -1383,7 +1385,7 @@ span {
   cursor: pointer;
 }
 .view-more-btn:hover {
-  background-color: rgb(76 76 76);
+  background-color: rgba(76, 76, 76, 0.849);
   transition: 0.2s;
 }
 .side-top {
@@ -1476,11 +1478,12 @@ span {
 /* Section2 End */
 
 /* Section3 Start */
+
 .Fortnite-Experiences {
   height: 120vh;
   width: 76%;
   display: flex;
-  margin: 50px auto;
+  margin: 10px auto;
   margin-top: 40px;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -1523,7 +1526,7 @@ span {
   flex-direction: column;
   cursor: pointer;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .fortnite-event2 {
   margin-right: 15px;
@@ -1668,3 +1671,472 @@ span {
 .fortnit-ad h2:hover {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
+
+/* Section3 End */
+
+/* Section4 Start */
+
+.game-library {
+  margin: 0 auto;
+  width: 78%;
+  height: 70vh;
+}
+.game-library-box {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+}
+.game-library-box ul {
+  width: 34%;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 2;
+  justify-content: space-between;
+  padding-right: 8px;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+.view-more-btn2 {
+  width: 106px;
+  height: 34px;
+  border: 1px solid rgb(145 145 145);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 5px;
+}
+.view-more-btn2 P {
+  font-family: sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 3.3;
+  color: white;
+  cursor: pointer;
+}
+.view-more-btn2:hover {
+  background-color: rgba(76, 76, 76, 0.849);
+  transition: 0.2s;
+}
+.border {
+  border-right: 1px solid rgb(37, 37, 37);
+  margin-left: 0;
+}
+.border2 {
+  border-right: 1px solid rgb(37, 37, 37);
+}
+.game-library-box li {
+  width: 100%;
+  height: 17%;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 8px 17px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.game-library-box li:hover {
+  background-color: rgb(42 42 42);
+}
+.game-library-image {
+  height: 100%;
+  width: 17.3%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 15px;
+}
+.game-library-box li:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.game-library-box li:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+.game-library-box .Wishlist-button {
+  top: -11px;
+  right: 4px;
+}
+.game-library-box #plus {
+  top: -3px;
+}
+.game-library-box .tooltip {
+  top: -65px;
+  left: -40px;
+}
+.game-library-box li h1 {
+  font-size: 13.5px;
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.game-library-box .discount {
+  margin-top: 8px;
+}
+.game-library-box .flex {
+  line-height: 1;
+}
+.flex h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 12px;
+  padding-left: 10px;
+}
+.flex h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.flex h3 {
+  color: rgba(255, 255, 255, 0.555);
+  font-family: sans-serif;
+  font-size: 14.5px;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.details {
+  width: 91px;
+  height: 23px;
+  background-color: rgb(42 42 42);
+  border-radius: 3px;
+  display: flex;
+  margin-top: 5px;
+  padding-top: 2px;
+}
+.details svg {
+  width: 23px;
+  height: 23px;
+  padding-left: 8px;
+  margin-top: -2px;
+}
+.details p {
+  font-size: 9px;
+  font-family: sans-serif;
+  padding-left: 5px;
+  padding-top: 1px;
+  letter-spacing: 0.5px;
+}
+.EA-Sport {
+  background-image: url(../image/EGS_EASPORTSFC24StandardEdition_EACanada_S2_1200x1600-37aa3816ed46542836e1068060998810.jfif);
+}
+.Red-Dead {
+  background-image: url(../image/RDR2PC1227_Epic\ Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg);
+}
+.alan-wake {
+  background-image: url(../image/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa.jfif);
+}
+.Hogwarts-Legacy {
+  background-image: url(../image/EGS_HogwartsLegacy_AvalancheSoftware_S2_1200x1600-2bb94423bf1c7e2fca10577d9f2878b9.jfif);
+}
+.Avatar {
+  background-image: url(../image/EGST_StorePortrait_1200x1600_1200x1600-201e8f02dd794c678599d0dcb66d078e.jfif);
+}
+.Lego-fortnite {
+  background-image: url(../image/Blade_1200x1600_1200x1600-fcea56f5eb92df731a89121e2b4416b5.jfif);
+}
+.Rocket-League {
+  background-image: url(../image/EGS_RocketLeague_PsyonixLLC_S2_1200x1600-eeed32ae8de826070bdad6ab622d0018.jfif);
+}
+.Ghostwire-Tokyo {
+  background-image: url(../image/EGS_GhostwireTokyoTall_1200x1600-7b8a36d1dfe782ed625e6c6bba487df9.jfif);
+}
+.Genshin-Impact {
+  background-image: url(../image/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820.jfif);
+}
+.VALORANT {
+  background-image: url(../image/Val_s2_1200x1600-a51221b62f3b4a013a17b22dd983c32c.jfif);
+}
+.Black-Myth-Wukong {
+  background-image: url(../image/black-myth-wukong-1cm8h.jfif);
+}
+.Homeworld-3 {
+  background-image: url(../image/egs-homeworld-3-epic-thumb-1200x1600-1200x1600-ac4f7a4b136c.jpg);
+}
+.SKULL-AND-BONES™ {
+  background-image: url(../image/SAB_Store_Portrait_1200x1600_1200x1600-121f3de29b692d333e0773c7d4a7a432.jfif);
+}
+.The-Wolf-Among-Us-2 {
+  background-image: url(../image/EGS_TheWolfAmongUs2_Telltale_S2_1200x1600-28a121945b86101ea1b20cc3d5f86e78.jfif);
+}
+.Frostpunk-2 {
+  background-image: url(../image/EGS_Frostpunk2_11bitstudios_S2_1200x1600-8b452490754cb4a4fe1a983c533cfb5d.jfif);
+}
+
+/* Section4 End */
+
+/* Section5 Start */
+
+.Trending {
+  height: 50vh;
+  width: 76%;
+  display: flex;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+.Trending .view-more-btn2 {
+  width: 100px;
+  margin-right: 20px;
+  margin-top: -5px;
+}
+.section5-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.discount2 {
+  width: 50px;
+}
+.Trending .flex h4 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.Cursed-to-Golf {
+  background-image: url(../image/download-cursed-to-golf-offer-17avs.jfif);
+}
+.Human-Resource-Machine {
+  background-image: url(../image/EGS_HumanResourceMachine_TomorrowCorporation_S2_1200x1600-cc77f5a73a9488836ae8fa580f09454c.jfif);
+}
+.Honkai-Star-Rail {
+  background-image: url(../image/EPIC_EN_1200x1600_1200x1600-1326d55d5f37fde4a54b25fba2257359.jfif);
+}
+.Lives-Arena {
+  background-image: url(../image/9lives-arena-ef21m.jfif);
+}
+.Five-Nights-at-Freddy {
+  background-image: url(../image/download-five-nights-at-freddys-security-breach-offer-xshms.jfif);
+}
+
+/* Section5 End */
+
+/* Section6 Start */
+
+.game-library {
+  margin: 0 auto;
+  width: 78%;
+  height: 70vh;
+}
+.game-library-box {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+}
+.game-library-box ul {
+  width: 34%;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 2;
+  justify-content: space-between;
+  padding-right: 8px;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+.view-more-btn2 {
+  width: 106px;
+  height: 34px;
+  border: 1px solid rgb(145 145 145);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 5px;
+}
+.view-more-btn2 P {
+  font-family: sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 3.3;
+  color: white;
+  cursor: pointer;
+}
+.view-more-btn2:hover {
+  background-color: rgba(76, 76, 76, 0.849);
+  transition: 0.2s;
+}
+.border {
+  border-right: 1px solid rgb(37, 37, 37);
+  margin-left: 0;
+}
+.border2 {
+  border-right: 1px solid rgb(37, 37, 37);
+}
+.game-library-box li {
+  width: 100%;
+  height: 17%;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 8px 17px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.game-library-title {
+  margin-top: 8px;
+}
+.game-library-box li:hover {
+  background-color: rgb(42 42 42);
+}
+.game-library-image {
+  height: 100%;
+  width: 17.3%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 15px;
+}
+.game-library-box li:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.game-library-box li:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+.game-library-box .Wishlist-button {
+  top: -11px;
+  right: 4px;
+}
+.game-library-box #plus {
+  top: -3px;
+}
+.game-library-box .tooltip {
+  top: -65px;
+  left: -40px;
+}
+.game-library-box li h1 {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.game-library-box .discount {
+  margin-top: 8px;
+}
+.game-library-box .flex {
+  line-height: 1;
+}
+.flex h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 12px;
+  padding-left: 10px;
+}
+.flex h5 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-top: 6px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.flex h3 {
+  color: rgba(255, 255, 255, 0.555);
+  font-family: sans-serif;
+  font-size: 14.5px;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.details {
+  width: 91px;
+  height: 23px;
+  background-color: rgb(42 42 42);
+  border-radius: 3px;
+  display: flex;
+  margin-top: 5px;
+  padding-top: 2px;
+}
+.details svg {
+  width: 23px;
+  height: 23px;
+  padding-left: 8px;
+  margin-top: -2px;
+}
+.details p {
+  font-size: 9px;
+  font-family: sans-serif;
+  padding-left: 5px;
+  padding-top: 1px;
+  letter-spacing: 0.5px;
+}
+.details2 p {
+  font-size: 9px;
+  font-family: sans-serif;
+  padding-top: 1px;
+  letter-spacing: 0.5px;
+  padding-left: 12px;
+}
+.Garten-of-Banban {
+  background-image: url(../image//garten-of-banban-6-1trpj.png);
+}
+.Alice-Jigsaw-Wonderland {
+  background-image: url(../image/alices-jigsaw-wonderland-chronicles-hx1gn.jpg);
+}
+.Scaryy-Bingo {
+  background-image: url(../image/scaryy-bingo-12kto.png);
+}
+.Argol-Kronoss-Castle {
+  background-image: url(../image/argol--kronoss-castle-1oodl.jpg);
+}
+.The-Messenger {
+  background-image: url(../image/EGS_Sabotage_TheMessenger_Portrait-1280x1440-39da361d51204d1d3c9707bfd3b9b2ea.jpg);
+}
+.Absolute-Drift {
+  background-image: url(../image/EGS_AbsoluteDrift_FunselektorLabsInc_S2-1200x1600-d61d185c1a25c41b211b497b89648832.jpg);
+}
+.Tchia {
+  background-image: url(../image/EGS_Tchia_Awaceb_S2_1200x1600-30ac6c45fa9f00724591b1ca567d8655.jfif);
+}
+.The-Telltale-Batman-Shadows {
+  background-image: url(../image/TheTelltaleBatmanShadowsEdition_Tall-510x680-24368ffb56983936896f0a7d908667ec.jpg);
+}
+.Burst-Hero {
+  background-image: url(../image/burst-hero-15oim.jfif);
+}
+.Team-Disorder {
+  background-image: url(../image/team-disorder-qkq2n.jpg);
+}
+.Quick-Race {
+  background-image: url(../image/quick-race-17e6p.jpg);
+}
+.Sakura-Day-Mahjong {
+  background-image: url(../image/sakura-day-2-mahjong-tjszw.jpg);
+}
+.Love-Money-Rock-n-Roll {
+  background-image: url(../image/love-money-rocknroll-imyl4.jpg);
+}
+
+/* Section6 End */
+
+/* Section7 Start */
