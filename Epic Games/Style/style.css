@@ -397,7 +397,7 @@ ul {
 /* Header Start */
 
 .header {
-  margin: 0 170px;
+  margin: 0 auto;
   width: 74%;
   display: flex;
   height: 67vh;
@@ -525,7 +525,6 @@ ul {
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 .linear-gradient h4 {
   display: block;
@@ -602,8 +601,12 @@ ul {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  display: inline-block;
   transform: translateY(15px);
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+#Wishlist2 {
+  padding-bottom: 0.2%;
 }
 .fa-plus {
   font-size: 10px;
@@ -612,14 +615,13 @@ ul {
   color: white;
   position: relative;
   top: -2px;
-  left: 0.8px;
+  left: 0.5px;
 }
 .Wishlist p {
   color: white;
   font-size: 10px;
   font-family: sans-serif;
   font-weight: 400;
-  transform: translateY(18px);
   font-weight: 600;
   display: inline-block;
   transform: translateY(13px);
@@ -858,7 +860,7 @@ ul {
   display: flex;
 }
 .Section1-part2:hover ~ .Section1-part3 {
-  margin-top: 425px;
+  margin-top: 426px;
 }
 .Section1-part2:hover {
   position: absolute;
@@ -1067,6 +1069,8 @@ span {
   transition: 0.2s;
   border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(22, 21, 21, 0);
+  display: flex;
+  padding-bottom: 0.5%;
 }
 .Wishlist-button:hover ~ .overflow-bg-color {
   visibility: hidden;
@@ -2052,14 +2056,6 @@ span {
   padding-top: 12px;
   padding-left: 10px;
 }
-.flex h5 {
-  color: white;
-  font-family: sans-serif;
-  font-size: 14px;
-  padding-top: 6px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
 .flex h3 {
   color: rgba(255, 255, 255, 0.555);
   font-family: sans-serif;
@@ -2089,13 +2085,12 @@ span {
   padding-left: 5px;
   padding-top: 1px;
   letter-spacing: 0.5px;
+  color: white;
+  font-weight: 600;
 }
 .details2 p {
-  font-size: 9px;
-  font-family: sans-serif;
-  padding-top: 1px;
-  letter-spacing: 0.5px;
-  padding-left: 12px;
+  padding-left: 10px;
+  line-height: 2;
 }
 .Garten-of-Banban {
   background-image: url(../image//garten-of-banban-6-1trpj.png);
@@ -2140,3 +2135,1253 @@ span {
 /* Section6 End */
 
 /* Section7 Start */
+
+.Most-Popular {
+  width: 76%;
+  height: 65vh;
+  display: flex;
+  z-index: 2;
+  margin: 50px auto;
+  flex-direction: column;
+  position: relative;
+}
+.Most-Popular-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding-top: 8px;
+}
+.Most-Popular-title i {
+  font-size: 8px;
+  margin-top: 7px;
+  margin-left: 6px;
+  color: rgb(151, 151, 151);
+  transition: 0.2s;
+}
+.Most-Popular-title:hover i {
+  margin-left: 12px;
+  transition: 0.2s;
+}
+.Section7-part1 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+}
+.Section7-part2 {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.Section7-part2:hover {
+  position: absolute;
+  height: 100%;
+}
+.Section7-part2:hover .overflow-games {
+  margin-top: 52px;
+}
+.angle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(32, 32, 32);
+  margin-top: 8px;
+}
+.angle-left,
+.angle-left2 {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  transition: 0.2s;
+  cursor: default;
+  z-index: -2;
+}
+.guard {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: default;
+}
+.guard2 {
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: default;
+  display: none;
+}
+#checkbox6:checked ~ .Section7-part1 .row .guard2 {
+  display: block;
+}
+.angle-right,
+.angle-right2 {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+}
+.angle-right2,
+.angle-left2 {
+  display: none;
+}
+.angle-right:hover,
+.angle-right2:hover {
+  background-color: #99979732;
+  transition: 0.2s;
+}
+#left {
+  color: gray;
+  transition: 1s;
+}
+#right {
+  color: white;
+  transition: 1s;
+}
+.overflow {
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 5;
+  transition: 1s;
+}
+.overflow-box {
+  width: 19%;
+  height: 80%;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.opening2 {
+  width: 160px;
+}
+.category {
+  display: flex;
+  transition: 1s;
+}
+.overflow-games {
+  width: 187px;
+  height: 264px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+.category h2 {
+  font-family: sans-serif;
+  font-size: 9.5px;
+  color: gray;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.category h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+.discount {
+  width: 41px;
+  height: 23px;
+  background-color: rgb(0, 116, 228);
+  align-items: center;
+  color: white;
+  border-radius: 4px;
+  margin-top: 13px;
+  padding: 0 8px;
+  line-height: 2.4;
+}
+.discount-text {
+  font-size: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.flex h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+span {
+  color: gray;
+}
+.flex {
+  display: flex;
+  line-height: 1.8;
+}
+.flex h5 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.flex h6 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.overflow-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 5px;
+}
+.overflow-games:hover .overflow-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.Wishlist-button {
+  right: 11px;
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: rgba(22, 21, 21, 0);
+  display: flex;
+  padding-bottom: 0.5%;
+}
+.Wishlist-button:hover ~ .overflow-bg-color {
+  visibility: hidden;
+}
+.overflow-box:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+#plus {
+  color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.overflow-box:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.tooltip {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(36, 34, 34);
+  font-family: sans-serif;
+  border-radius: 5px;
+  font-weight: 600;
+  top: -50px;
+  left: 100px;
+  color: white;
+  text-align: center;
+  line-height: 3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  word-spacing: -1px;
+  visibility: hidden;
+}
+.tooltip2 {
+  left: 50px;
+}
+.Wishlist-button:hover ~ .tooltip {
+  visibility: visible;
+}
+.Most-Popular input {
+  display: none;
+}
+#checkbox5:checked ~ .Section7-part2 .overflow .category {
+  transform: translateX(-75vw);
+  transition: 1s;
+}
+#checkbox6:checked ~ .Section7-part2 .overflow .category {
+  transform: translateX(-135vw);
+  transition: 1s;
+}
+#checkbox5:checked ~ .Section7-part1 .row .selector .angle-left #left {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+#checkbox5:checked ~ .Section7-part1 .row .selector .angle-left:hover,
+#checkbox5:checked ~ .Section7-part1 .row .selector .angle-left2:hover {
+  background-color: #99979732;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#checkbox5:checked ~ .Section7-part1 .row .selector .angle-left {
+  z-index: 1;
+}
+#checkbox5:checked ~ .Section7-part1 .row .selector .angle-right2,
+#checkbox6:checked ~ .Section7-part1 .row .selector .angle-left2 {
+  display: block;
+  z-index: 2;
+}
+#checkbox6:checked ~ .Section7-part1 .row .selector #right {
+  color: gray;
+  transition: 2s;
+}
+.Ghostwire {
+  background-image: url(../image/EGS_GhostwireTokyoDeluxeEditionTall_1200x1600-e0e18c7cd20eaee75163c69e61a5ec30.jfif);
+}
+.The-Outer-Worlds {
+  background-image: url(../image/EGS_TheOuterWorldsSpacersChoiceEdition_ObsidianEntertainment_S2_1200x1600-24b156886564b75bf9aa823a0a0eb18e.jfif);
+}
+.Red-Dead-Redemption {
+  background-image: url(../image/RDR2PC1227_Epic\ Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg);
+}
+.EA-Sports {
+  background-image: url(../image/EGS_EASPORTSFC24StandardEdition_EACanada_S2_1200x1600-37aa3816ed46542836e1068060998810.jfif);
+  background-position: 195px;
+}
+.Cat-Quest {
+  background-image: url(../image/cat-quest-ofygy.jpg);
+}
+.NARAKA-BLADEPOINT {
+  background-image: url(../image/EGS_NARAKABLADEPOINT_24Entertainment_S2_1200x1600-0828f82ab96ff2be38169b992ddef860.jfif);
+}
+.Cursed-to-Golf {
+  background-image: url(../image/download-cursed-to-golf-offer-17avs.jfif);
+}
+.Bloons-TD-6 {
+  background-image: url(../image/download-bloons-td-6-offer-100fo.jpg);
+}
+.Ghostrunner {
+  background-image: url(../image/EGS_GhostrunnerCompleteEdition_OneMoreLevel_Bundles_S2_1200x1600-ec40756a0d1a3948670940d9bc7d3a7c.jfif);
+}
+.Fallout-3 {
+  background-image: url(../image/EGS_Fallout3GameoftheYearEdition_BethesdaGameStudios_S2_1200x1600-e2ba392652a1f57c4feb65d6bbd1f963.jfif);
+}
+.Art-of-Rally {
+  background-image: url(../image/EGS_artofrally_FunselektorLabsInc_S2_1200x1600-d51d66f13d6cf3bb0892f8aab3366714.jfif);
+}
+.Snakebird-Complete {
+  background-image: url(../image/snakebird-complete-ia7r1.jpg);
+}
+
+/* Section7 End */
+
+/* Section8 Start */
+
+.Recently-Updated {
+  width: 76%;
+  height: 65vh;
+  display: flex;
+  z-index: 2;
+  margin: 50px auto;
+  flex-direction: column;
+  position: relative;
+}
+.Recently-Updated-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding-top: 8px;
+}
+.Recently-Updated-title i {
+  font-size: 8px;
+  margin-top: 7px;
+  margin-left: 6px;
+  color: rgb(151, 151, 151);
+  transition: 0.2s;
+}
+.Recently-Updated-title:hover i {
+  margin-left: 12px;
+  transition: 0.2s;
+}
+.Section8-part1 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+}
+.Section8-part2 {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.Section8-part2:hover {
+  position: absolute;
+  height: 100%;
+}
+.Section8-part2:hover .overflow-games {
+  margin-top: 52px;
+}
+.angle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(32, 32, 32);
+  margin-top: 8px;
+}
+.angle-left,
+.angle-left2,
+.angle-left3 {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  transition: 0.2s;
+  cursor: default;
+  z-index: -2;
+}
+.guard {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: default;
+}
+.guard2 {
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: default;
+  display: none;
+}
+#checkbox9:checked ~ .Section8-part1 .row .guard2 {
+  display: block;
+}
+.angle-right,
+.angle-right2,
+.angle-right3 {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+}
+.angle-right2,
+.angle-left2,
+.angle-right3,
+.angle-left3 {
+  display: none;
+}
+.angle-right:hover,
+.angle-right2:hover,
+.angle-right3:hover {
+  background-color: #99979732;
+  transition: 0.2s;
+}
+#left {
+  color: gray;
+  transition: 1s;
+}
+#right {
+  color: white;
+  transition: 1s;
+}
+.overflow {
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 5;
+  transition: 1s;
+}
+.overflow-box {
+  width: 19%;
+  height: 80%;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.opening2 {
+  width: 160px;
+}
+.category {
+  display: flex;
+  transition: 1s;
+}
+.overflow-games {
+  width: 187px;
+  height: 264px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+.category h2 {
+  font-family: sans-serif;
+  font-size: 9.5px;
+  color: gray;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.category h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+.discount {
+  width: 41px;
+  height: 23px;
+  background-color: rgb(0, 116, 228);
+  align-items: center;
+  color: white;
+  border-radius: 4px;
+  margin-top: 13px;
+  padding: 0 8px;
+  line-height: 2.4;
+}
+.discount-text {
+  font-size: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.flex h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+span {
+  color: gray;
+}
+.flex {
+  display: flex;
+  line-height: 1.8;
+}
+.flex h5 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.flex h6 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.overflow-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 5px;
+}
+.overflow-games:hover .overflow-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.Wishlist-button {
+  right: 11px;
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: rgba(22, 21, 21, 0);
+  display: flex;
+  padding-bottom: 0.5%;
+}
+.Wishlist-button:hover ~ .overflow-bg-color {
+  visibility: hidden;
+}
+.overflow-box:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+#plus {
+  color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.overflow-box:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.tooltip {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(36, 34, 34);
+  font-family: sans-serif;
+  border-radius: 5px;
+  font-weight: 600;
+  top: -50px;
+  left: 100px;
+  color: white;
+  text-align: center;
+  line-height: 3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  word-spacing: -1px;
+  visibility: hidden;
+}
+.tooltip2 {
+  left: 50px;
+}
+.Wishlist-button:hover ~ .tooltip {
+  visibility: visible;
+}
+.Recently-Updated input {
+  display: none;
+}
+#checkbox7:checked ~ .Section8-part2 .overflow .category {
+  transform: translateX(-75vw);
+  transition: 1s;
+}
+#checkbox8:checked ~ .Section8-part2 .overflow .category {
+  transform: translateX(-149.8vw);
+  transition: 1s;
+}
+#checkbox9:checked ~ .Section8-part2 .overflow .category {
+  transform: translateX(-195.2vw);
+  transition: 1s;
+}
+#checkbox7:checked ~ .Section8-part1 .row .selector .angle-left #left {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+#checkbox7:checked ~ .Section8-part1 .row .selector .angle-left:hover,
+#checkbox7:checked ~ .Section8-part1 .row .selector .angle-left2:hover,
+#checkbox7:checked ~ .Section8-part1 .row .selector .angle-left3:hover {
+  background-color: #99979732;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#checkbox7:checked ~ .Section8-part1 .row .selector .angle-left {
+  z-index: 1;
+}
+#checkbox7:checked ~ .Section8-part1 .row .selector .angle-right2,
+#checkbox8:checked ~ .Section8-part1 .row .selector .angle-left2 {
+  display: block;
+  z-index: 2;
+}
+#checkbox8:checked ~ .Section8-part1 .row .selector .angle-right3,
+#checkbox9:checked ~ .Section8-part1 .row .selector .angle-left3 {
+  display: block;
+  z-index: 3;
+}
+#checkbox9:checked ~ .Section8-part1 .row .selector .angle-right4 {
+  display: block;
+  z-index: 4;
+}
+#checkbox9:checked ~ .Section8-part1 .row .selector #right {
+  color: gray;
+  transition: 2s;
+}
+.Genshin-Impact {
+  background-image: url(../image/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820.jfif);
+}
+.Tower-of-Fantasy {
+  background-image: url(../image/EGS_TowerofFantasy_HOTTASTUDIO_S2_1200x1600-fd22cd87ecd5d83d1673d1287cdcb605.jfif);
+}
+.SYNCED {
+  background-image: url(../image/EGS_SYNCED_NExTStudios_S2_1200x1600-981da486770beadf0873ddb096da33fa.jfif);
+}
+.Warframe {
+  background-image: url(../image/s2_1200x1600-fbaa33fbd2ab9a531da240c574d39f07.jfif);
+}
+.Honkai-Impact-3rd {
+  background-image: url(../image/EGS_HonkaiImpact3rd_miHoYoLimited_S2_1200x1600-1b38bfc22a3cbe6a187573afb4811860.jfif);
+}
+.Path-of-Exile {
+  background-image: url(../image/EGS_PathofExile_GrindingGearGames_S2_1200x1600-242b68b5ce60f0e8469f4300afdee9e2.jfif);
+}
+.League-of-Legends {
+  background-image: url(../image/EGS_LeagueofLegends_RiotGames_S2_1200x1600-c58a7afbb6808f264de15408f247386b.jfif);
+}
+.PUBG {
+  background-image: url(../image/pubg-battlegrounds-1m0lf.jfif);
+}
+.Dead-by-daylight {
+  background-image: url(../image/EGS_DeadbyDaylight_BehaviourInteractive_S2_1200x1600-a1c30209e3b9fb63144daa9b5670f503.jfif);
+}
+.EVE-Online {
+  background-image: url(../image/EGS_EVEOnline_CCPGames_S2_1200x1600-32b657964d72a2963a687968185caaa7.jfif);
+}
+.Call-of-the-Wild {
+  background-image: url(../image/EGS_CalloftheWildTheAngler_ExpansiveWorlds_S2_1200x1600-0d7a89b485ad0eb1299a7e4fcc008051.jfif);
+}
+.World-of-Warships {
+  background-image: url(../image/EGS_WorldofWarships_WargamingGroupLimited_S2_1200x1600-911f15a7e6d51e627a10073e20d0fdbe.jfif);
+}
+.Gloomhaven {
+  background-image: url(../image/download-gloomhaven-offer-1ho2x.jpg);
+}
+.Crime-Boss {
+  background-image: url(../image/EGS_CrimeBossRockayCity_INGAMESTUDIOS_S2_1200x1600-589327a4d212fe00efed9cbf7fd5841e_1200x1600-589327a4d212fe00efed9cbf.jfif);
+}
+.Star-Trek-Online {
+  background-image: url(../image/EGS_StarTrekOnline_CrypticStudios_S2_1200x1600-bb9a21f0d1768107a90b6868d27e5c88.jfif);
+}
+
+/* Section8 End */
+
+/* Section9 Start */
+
+.Now-On-The-Epic-Games-Store {
+  width: 76%;
+  height: 69vh;
+  display: flex;
+  z-index: 2;
+  margin: 50px auto;
+  flex-direction: column;
+  position: relative;
+}
+.Now-On-The-Epic-Games-Store-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding-top: 8px;
+}
+.Now-On-The-Epic-Games-Store-title i {
+  font-size: 8px;
+  margin-top: 7px;
+  margin-left: 6px;
+  color: rgb(151, 151, 151);
+  transition: 0.2s;
+}
+.Now-On-The-Epic-Games-Store-title:hover i {
+  margin-left: 12px;
+  transition: 0.2s;
+}
+.Section9-part1 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+}
+.Section9-part2 {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.Section9-part2:hover {
+  position: absolute;
+  height: 100%;
+}
+.Section9-part2:hover .overflow-games {
+  margin-top: 54.99px;
+}
+.Section9-part2:hover .category h3 {
+  line-height: 1.333;
+}
+.angle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(32, 32, 32);
+  margin-top: 8px;
+}
+.angle-left,
+.angle-left2 {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  transition: 0.2s;
+  cursor: default;
+  z-index: -2;
+}
+.guard {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: default;
+}
+.guard2 {
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: default;
+  display: none;
+}
+#checkbox11:checked ~ .Section9-part1 .row .guard2 {
+  display: block;
+}
+.angle-right,
+.angle-right2 {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+}
+.angle-right2,
+.angle-left2 {
+  display: none;
+}
+.angle-right:hover,
+.angle-right2:hover {
+  background-color: #99979732;
+  transition: 0.2s;
+}
+#left {
+  color: gray;
+  transition: 1s;
+}
+#right {
+  color: white;
+  transition: 1s;
+}
+.overflow {
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 5;
+  transition: 1s;
+}
+.overflow-box {
+  width: 19%;
+  height: 81%;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.category {
+  display: flex;
+  transition: 1s;
+}
+.overflow-games {
+  width: 187px;
+  height: 264px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+.category h2 {
+  font-family: sans-serif;
+  font-size: 9.5px;
+  color: gray;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.category h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
+}
+.discount {
+  width: 41px;
+  height: 23px;
+  background-color: rgb(0, 116, 228);
+  align-items: center;
+  color: white;
+  border-radius: 4px;
+  margin-top: 13px;
+  padding: 0 8px;
+  line-height: 2.4;
+}
+.discount-text {
+  font-size: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.flex h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+span {
+  color: gray;
+}
+.flex {
+  display: flex;
+  line-height: 1.8;
+}
+.flex h5 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.flex h6 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.overflow-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 5px;
+}
+.overflow-games:hover .overflow-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.Wishlist-button {
+  right: 11px;
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: rgba(22, 21, 21, 0);
+  display: flex;
+  padding-bottom: 0.5%;
+}
+.Wishlist-button:hover ~ .overflow-bg-color {
+  visibility: hidden;
+}
+.overflow-box:hover .Wishlist-button {
+  transition: 0.2s;
+  visibility: visible;
+  border: 2px solid white;
+  background-color: rgb(22, 21, 21);
+}
+#plus {
+  color: rgba(255, 255, 255, 0);
+  transition: 0.1s;
+}
+.overflow-box:hover #plus {
+  transition: 0.2s;
+  visibility: visible;
+  color: white;
+}
+.tooltip {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(36, 34, 34);
+  font-family: sans-serif;
+  border-radius: 5px;
+  font-weight: 600;
+  top: -50px;
+  left: 100px;
+  color: white;
+  text-align: center;
+  line-height: 3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  word-spacing: -1px;
+  visibility: hidden;
+}
+.tooltip2 {
+  left: 50px;
+}
+.Wishlist-button:hover ~ .tooltip {
+  visibility: visible;
+}
+.Now-On-The-Epic-Games-Store input {
+  display: none;
+}
+#checkbox10:checked ~ .Section9-part2 .overflow .category {
+  transform: translateX(-75vw);
+  transition: 1s;
+}
+#checkbox11:checked ~ .Section9-part2 .overflow .category {
+  transform: translateX(-149.8vw);
+  transition: 1s;
+}
+#checkbox10:checked ~ .Section9-part1 .row .selector .angle-left #left {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+#checkbox10:checked ~ .Section9-part1 .row .selector .angle-left:hover,
+#checkbox10:checked ~ .Section9-part1 .row .selector .angle-left2:hover {
+  background-color: #99979732;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#checkbox10:checked ~ .Section9-part1 .row .selector .angle-left {
+  z-index: 1;
+}
+#checkbox10:checked ~ .Section9-part1 .row .selector .angle-right2,
+#checkbox11:checked ~ .Section9-part1 .row .selector .angle-left2 {
+  display: block;
+  z-index: 2;
+}
+#checkbox11:checked ~ .Section9-part1 .row .selector #right {
+  color: gray;
+  transition: 2s;
+}
+.DNF {
+  background-image: url(../image/dnf-duel-53i3x.jpg);
+}
+.Melvor-Idle {
+  background-image: url(../image/melvor-idle-opjy3.jpg);
+}
+.Tales-of-the-Tiny-Planet {
+  background-image: url(../image/tales-of-the-tiny-planet-rp7ao.jpg);
+}
+.Indoorlands {
+  background-image: url(../image/indoorlands-63jv5.jpg);
+}
+.Battle-Planet {
+  background-image: url(../image/battle-planet--judgement-day-1lxyf.jpg);
+}
+.Reef-Escape {
+  background-image: url(../image/reef-escape-8svif.jpg);
+}
+.Virtual-Rides-3 {
+  background-image: url(../image/virtual-rides-3-61pdc.jpg);
+}
+.Mediterranea-Inferno {
+  background-image: url(../image/mediterranea-inferno-1dssb.jpg);
+}
+.Argol-Kronoss-Castle {
+  background-image: url(../image/argol--kronoss-castle-1oodl.jpg);
+}
+.Otok {
+  background-image: url(../image/otok-1llbd.jfif);
+}
+.Rise-of-Gun {
+  background-image: url(../image/rise-of-gun-j7tue.jfif);
+}
+.Jigsaw {
+  background-image: url(../image/1001-jigsaw-earth-chronicles-1jwub.jpg);
+}
+.Block-Buster-Billy {
+  background-image: url(../image/block-buster-billy-i5ca3.jfif);
+}
+.Alice-Jigsaw {
+  background-image: url(../image/alices-jigsaw-wonderland-chronicles-hx1gn.jpg);
+}
+.Crown-of-the-Empire-2 {
+  background-image: url(../image/crown-of-the-empire-2-around-the-world-h6yss.jpg);
+}
+
+/* Section9 End */
+
+/* Section10 Start */
+
+.Epic-Games-option {
+  width: 75%;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 120px;
+}
+.Epic-Games-option-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Sales,
+.Free-Games {
+  margin-right: 32px;
+}
+.Epic-Games-option-box div {
+  width: 100%;
+  height: 51%;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.Epic-Games-option h1 {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.Epic-Games-option p {
+  color: gray;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-top: 13px;
+  margin-left: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.Epic-Games-option h2 {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  width: 60px;
+  line-height: 1.3;
+}
+.Free-Games h2 {
+  width: 78px;
+}
+.Epic-Games-option h2:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.section10-bg-color {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 15px;
+}
+.Epic-Games-option-box div:hover .section10-bg-color {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
+}
+.Sales-image {
+  background-image: url(../image/egs-sales-specials-breaker-1280x721-8d81919a48e5.jpg);
+}
+.Free-Games-image {
+  background-image: url(../image/egs-free-games-breaker-may-2023-1920x1080-3d7b336fd40c.jpg);
+}
+.Apps-image {
+  background-image: url(../image/egs-non-game-apppromo-blog-1920x1080-59bd51d9d448.jpg);
+}
+
+/* Section10 End */
+
+/* Footer Start */
+
+footer {
+  width: 100%;
+  height: 92vh;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 72px;
+  padding-bottom: 40px;
+  cursor: default;
+}
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.logo-box div {
+  display: flex;
+}
+.fa-brands {
+  font-size: 27px;
+  color: #cccccc;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.fa-brands:hover,
+.return-btn:hover i,
+footer h2:hover,
+footer h3:hover {
+  color: #0078f2;
+  transition: 0.5s;
+}
+.return-btn:hover {
+  border: 2px solid #0078f2;
+  transition: 0.5s;
+}
+.return-btn {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #cccccc;
+  margin-right: 15px;
+  margin-top: 5px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.return-btn i {
+  transform: rotate(270deg);
+  color: #cccccc;
+  font-size: 24px;
+  transition: 0.5s;
+}
+footer h1 {
+  font-family: sans-serif;
+  color: #ccc;
+  opacity: 0.4;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.Resources-box,
+.Made-By-Epic-Games {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+footer h2 {
+  font-size: 14.2px;
+  font-family: sans-serif;
+  color: #e7e7e7;
+  line-height: 1.7;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-right: 30px;
+  font-weight: 500;
+}
+.Made-By-Epic-Games {
+  border-bottom: 1px solid #333;
+  height: 100px;
+  margin-bottom: 40px;
+}
+footer p {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #ccc;
+  line-height: 2;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+footer h3 {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #ccc;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-right: 20px;
+}
+footer img {
+  width: 32px;
+  height: 36px;
+}
