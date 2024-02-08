@@ -21,11 +21,20 @@ body {
   cursor: pointer;
   width: 5%;
   height: 100%;
+  display: flex;
+  align-items: baseline;
 }
 .list1 {
   width: 100%;
   height: 100%;
   display: flex;
+}
+.group {
+  position: relative;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: end;
 }
 img {
   width: 25px;
@@ -35,8 +44,8 @@ img {
   color: gray;
   transform: rotate(90deg);
   font-size: 15px;
-  margin: -27px 16px;
-  margin-left: 25px;
+  margin: -25px 0;
+  margin-left: 15px;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -125,8 +134,8 @@ img {
 .nav-menu {
   display: flex;
   flex-flow: row nowrap;
-  width: 44.5%;
-  height: 75.5%;
+  width: 641px;
+  height: 496px;
   background-color: #202024;
   position: absolute;
   border-radius: 15px;
@@ -146,9 +155,9 @@ img {
   border-left: 2px solid #303034;
   width: 1%;
   height: 48%;
-  margin-left: 5px;
-  margin-right: 10px;
-  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-top: 1.5%;
 }
 ul {
   display: flex;
@@ -185,9 +194,6 @@ ul {
 }
 .margin {
   width: 107%;
-}
-.languages {
-  margin-left: 640px;
 }
 #earth {
   color: #98989b;
@@ -241,8 +247,8 @@ ul {
   transition: 0.3s;
 }
 .room {
-  width: 12.3%;
-  height: 8%;
+  width: 21%;
+  height: 100%;
   position: absolute;
   right: 70px;
   top: 45px;
@@ -253,8 +259,8 @@ ul {
   position: absolute;
   right: 65px;
   top: 90px;
-  width: 13%;
-  height: 80%;
+  width: 187px;
+  height: 525px;
   background-color: #202024;
   color: #838282;
   border-radius: 10px;
@@ -305,9 +311,6 @@ ul {
 .language:hover {
   visibility: visible;
 }
-
-/* Nav(Alpha) End */
-
 .column1 {
   width: 47%;
   height: 100%;
@@ -331,6 +334,8 @@ ul {
   margin-left: 10px;
 }
 
+/* Nav(Alpha) End */
+
 /* Nav(Beta) Start */
 
 .sub-nav {
@@ -343,7 +348,7 @@ ul {
   background-color: #141314;
 }
 .content {
-  margin: 0 170px;
+  margin-left: 170px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -366,7 +371,6 @@ ul {
   letter-spacing: 0.3px;
 }
 .search-bar {
-  max-width: 230px;
   width: 230px;
   height: 40px;
   background-color: rgb(32 32 32);
@@ -396,8 +400,11 @@ ul {
 
 /* Header Start */
 
+header {
+  display: flex;
+  justify-content: center;
+}
 .header {
-  margin: 0 auto;
   width: 74%;
   display: flex;
   height: 67vh;
@@ -412,26 +419,28 @@ ul {
   cursor: pointer;
   margin-right: 15px;
   position: relative;
+  display: flex;
 }
 .linear-gradient {
   width: 100%;
   height: 100%;
   background: linear-gradient(270deg, rgba(11, 11, 11, 0) 0%, #0b0b0b93 100%);
   border-radius: 15px;
+  display: flex;
 }
 .Fortnite {
   width: 50%;
   height: 50%;
   position: absolute;
   left: 30px;
-  top: 120px;
+  bottom: 120px;
 }
 .dead-by-daylight {
   width: 50%;
   height: 50%;
   position: absolute;
   left: 30px;
-  top: 120px;
+  bottom: 120px;
   visibility: hidden;
 }
 .The-Game-Awards {
@@ -439,7 +448,7 @@ ul {
   height: 50%;
   position: absolute;
   left: 30px;
-  top: 120px;
+  bottom: 120px;
   visibility: hidden;
 }
 .avatar {
@@ -447,7 +456,7 @@ ul {
   height: 50%;
   position: absolute;
   left: 30px;
-  top: 120px;
+  bottom: 120px;
   visibility: hidden;
 }
 .Homeworld3 {
@@ -455,7 +464,7 @@ ul {
   height: 50%;
   position: absolute;
   left: 30px;
-  top: 120px;
+  bottom: 120px;
   visibility: hidden;
 }
 .destiny2 {
@@ -463,7 +472,7 @@ ul {
   height: 50%;
   position: absolute;
   left: 30px;
-  top: 120px;
+  bottom: 120px;
   visibility: hidden;
 }
 .transparent-box {
@@ -636,11 +645,12 @@ ul {
   height: 100%;
   border-radius: 7px;
   display: flex;
-  padding: 10px;
-  padding-bottom: 0;
+  padding-inline: 10px;
   cursor: pointer;
   margin-top: 3px;
   position: relative;
+  padding-right: 0;
+  align-items: center;
 }
 .game-title:hover {
   background-color: #ffffff25;
@@ -655,7 +665,7 @@ ul {
 .title-games-image {
   background-position: center;
   background-size: cover;
-  width: 40px;
+  width: 41px;
   height: 83%;
   border-radius: 8px;
 }
@@ -668,13 +678,12 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.5px;
   position: absolute;
-  right: 18px;
+  left: 60px;
 }
 .title-games-text2 {
   line-height: 3.2;
   position: absolute;
   left: 60px;
-  right: 0;
 }
 .dead-by-daylight-image {
   background-image: url(../image/egs-dead-by-daylight-chucky-carousel-thumb-1080x1920-f2badcb38e47.jpg);
@@ -757,48 +766,36 @@ ul {
 }
 #radio5:checked ~ .cover {
   background-image: url(../image/egs-dead-by-daylight-chucky-carousel-desktop-1920x1080-8f85c6417e33.jpg);
-  width: 81%;
-  height: 100%;
   background-size: cover;
   transition-delay: 0.3s;
   transition: 0.2s;
 }
 #radio2:checked ~ .cover {
   background-image: url(../image/tga-desktop-carousel-asset-1920x1080-0c910128575f.jpg);
-  width: 81%;
-  height: 100%;
   background-size: cover;
   transition-delay: 0.3s;
   transition: 0.2s;
 }
 #radio3:checked ~ .cover {
   background-image: url(../image/egs-homewrold-3-carousel-desktop-1920x1080-0ba8d22503a4.jpg);
-  width: 81%;
-  height: 100%;
   background-size: cover;
   transition-delay: 0.3s;
   transition: 0.2s;
 }
 #radio4:checked ~ .cover {
   background-image: url(../image/egs-avatar-frontiers-of-pandora-carousel-desktop-1248x702-9346d193b313.jpg);
-  width: 81%;
-  height: 100%;
   background-size: cover;
   transition-delay: 0.3s;
   transition: 0.2s;
 }
 #radio6:checked ~ .cover {
   background-image: url(../image/egs-destiny-2-season-23-carousel-desktop-1920x1080-4733c6553a99.jpg);
-  width: 81%;
-  height: 100%;
   background-size: cover;
   transition-delay: 0.3s;
   transition: 0.2s;
 }
 #radio1:checked ~ .cover {
   background-image: url(../image/egs-fortnite-chapter-5-season-1-carousel-desktop-1920x1080-55fe87ee88ef.jpg);
-  width: 81%;
-  height: 100%;
   background-size: cover;
   transition-delay: 0.3s;
   transition: 0.2s;
@@ -833,41 +830,32 @@ ul {
 /* Section1 Start */
 
 .Holiday-Sale-Spotlight {
-  width: 76%;
+  width: 100%;
   height: 130vh;
   display: flex;
   flex-direction: column;
   z-index: 2;
   margin: 50px auto;
   position: relative;
+  align-items: center;
 }
 .Section1-part1 {
-  width: 100%;
+  width: 80%;
   height: 5%;
   display: flex;
   margin-top: 10px;
 }
 .Section1-part2 {
-  width: 100%;
+  width: 80%;
   height: 44%;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .Section1-part3 {
   height: 51%;
-  width: 100%;
+  width: 80%;
   position: relative;
   display: flex;
-}
-.Section1-part2:hover ~ .Section1-part3 {
-  margin-top: 426px;
-}
-.Section1-part2:hover {
-  position: absolute;
-  height: 52.1%;
-}
-.Section1-part2:hover .overflow-games {
-  margin-top: 50px;
 }
 .Holiday-Sale-Spotlight-title {
   color: white;
@@ -905,6 +893,7 @@ ul {
   transition: 0.2s;
   cursor: default;
   z-index: -2;
+  margin-right: 130px;
 }
 .guard {
   position: absolute;
@@ -926,6 +915,7 @@ ul {
   border-radius: 50%;
   cursor: default;
   display: none;
+  margin-right: 130px;
 }
 #checkbox4:checked ~ .Section1-part1 .row .guard2 {
   display: block;
@@ -939,6 +929,7 @@ ul {
   top: 0;
   right: 15px;
   cursor: pointer;
+  margin-right: 130px;
 }
 .angle-right2,
 .angle-left2,
@@ -982,9 +973,8 @@ ul {
   transition: 1s;
 }
 .overflow-box {
-  width: 19%;
+  width: 16vw;
   height: 100%;
-  margin-right: 18px;
   cursor: pointer;
 }
 .opening {
@@ -995,8 +985,8 @@ ul {
   transition: 1s;
 }
 .overflow-games {
-  width: 187px;
-  height: 264px;
+  width: 15vw;
+  height: 40vh;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -1118,19 +1108,19 @@ span {
   display: none;
 }
 #checkbox1:checked ~ .Section1-part2 .overflow .category {
-  transform: translateX(-75vw);
+  transform: translateX(-78.8vw);
   transition: 1s;
 }
 #checkbox2:checked ~ .Section1-part2 .overflow .category {
-  transform: translateX(-149.8vw);
+  transform: translateX(-157.5vw);
   transition: 1s;
 }
 #checkbox3:checked ~ .Section1-part2 .overflow .category {
-  transform: translateX(-224.2vw);
+  transform: translateX(-237vw);
   transition: 1s;
 }
 #checkbox4:checked ~ .Section1-part2 .overflow .category {
-  transform: translateX(-254.6vw);
+  transform: translateX(-268.2vw);
   transition: 1s;
 }
 #checkbox1:checked ~ .Section1-part1 .row .selector .angle-left #left {
@@ -1309,10 +1299,11 @@ span {
 
 .Developer-Spotlight {
   height: 140vh;
-  width: 76%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  align-items: center;
+  margin: 0 auto;
 }
 .section2-part1 {
   margin-bottom: 50px;
@@ -1349,11 +1340,12 @@ span {
   background-image: url(../image/en_Remedy_DEER_S2_1200x1600_1200x1600-8024b0d13e7a3f3888cb27df87cf263f.jfif);
 }
 .section2-part2 {
-  width: 98%;
+  width: 80%;
   height: 70%;
   background-color: rgb(42 42 42);
   padding: 30px 40px;
   border-radius: 5px;
+  margin: 0 auto;
 }
 .section2-part2-title {
   color: white;
@@ -1414,7 +1406,7 @@ span {
 }
 .ad {
   width: 100%;
-  height: 65%;
+  height: 68%;
   background-position: center;
   background-size: cover;
   border-top-right-radius: 5px;
@@ -1487,10 +1479,9 @@ span {
   height: 120vh;
   width: 76%;
   display: flex;
-  margin: 10px auto;
+  margin: 40px auto;
   margin-top: 40px;
   flex-wrap: wrap;
-  align-content: flex-start;
 }
 .section3-title {
   color: white;
@@ -1582,9 +1573,7 @@ span {
   color: white;
 }
 .tooltip3 {
-  position: absolute;
-  left: 230px;
-  top: -50;
+  margin-left: 130px;
 }
 .fortnite-event h2 {
   font-family: sans-serif;
@@ -1887,13 +1876,14 @@ span {
 
 .Trending {
   height: 50vh;
-  width: 76%;
+  width: 80%;
   display: flex;
   margin: 50px auto;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
   margin-bottom: 130px;
+  align-items: center;
 }
 .Trending .view-more-btn2 {
   width: 100px;
@@ -2137,13 +2127,14 @@ span {
 /* Section7 Start */
 
 .Most-Popular {
-  width: 76%;
+  width: 100%;
   height: 65vh;
   display: flex;
+  flex-direction: column;
   z-index: 2;
   margin: 50px auto;
-  flex-direction: column;
   position: relative;
+  align-items: center;
 }
 .Most-Popular-title {
   color: white;
@@ -2166,21 +2157,14 @@ span {
   transition: 0.2s;
 }
 .Section7-part1 {
-  width: 100%;
+  width: 80%;
   height: 12%;
   display: flex;
 }
 .Section7-part2 {
-  width: 100%;
+  width: 80%;
   height: 90%;
   display: flex;
-}
-.Section7-part2:hover {
-  position: absolute;
-  height: 100%;
-}
-.Section7-part2:hover .overflow-games {
-  margin-top: 52px;
 }
 .angle {
   width: 30px;
@@ -2256,28 +2240,12 @@ span {
   z-index: 5;
   transition: 1s;
 }
-.overflow-box {
-  width: 19%;
-  height: 80%;
-  margin-right: 18px;
-  cursor: pointer;
-}
 .opening2 {
   width: 160px;
 }
 .category {
   display: flex;
   transition: 1s;
-}
-.overflow-games {
-  width: 187px;
-  height: 264px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  position: relative;
 }
 .category h2 {
   font-family: sans-serif;
@@ -2350,17 +2318,6 @@ span {
   height: 100%;
   background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
 }
-.Wishlist-button {
-  right: 11px;
-  top: 0;
-  position: absolute;
-  visibility: hidden;
-  transition: 0.2s;
-  border: 2px solid rgba(255, 255, 255, 0);
-  background-color: rgba(22, 21, 21, 0);
-  display: flex;
-  padding-bottom: 0.5%;
-}
 .Wishlist-button:hover ~ .overflow-bg-color {
   visibility: hidden;
 }
@@ -2407,11 +2364,11 @@ span {
   display: none;
 }
 #checkbox5:checked ~ .Section7-part2 .overflow .category {
-  transform: translateX(-75vw);
+  transform: translateX(-78.7vw);
   transition: 1s;
 }
 #checkbox6:checked ~ .Section7-part2 .overflow .category {
-  transform: translateX(-135vw);
+  transform: translateX(-142vw);
   transition: 1s;
 }
 #checkbox5:checked ~ .Section7-part1 .row .selector .angle-left #left {
@@ -2447,7 +2404,7 @@ span {
 }
 .EA-Sports {
   background-image: url(../image/EGS_EASPORTSFC24StandardEdition_EACanada_S2_1200x1600-37aa3816ed46542836e1068060998810.jfif);
-  background-position: 195px;
+  background-position: center;
 }
 .Cat-Quest {
   background-image: url(../image/cat-quest-ofygy.jpg);
@@ -2479,13 +2436,14 @@ span {
 /* Section8 Start */
 
 .Recently-Updated {
-  width: 76%;
+  width: 100%;
   height: 65vh;
   display: flex;
   z-index: 2;
   margin: 50px auto;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 .Recently-Updated-title {
   color: white;
@@ -2508,21 +2466,14 @@ span {
   transition: 0.2s;
 }
 .Section8-part1 {
-  width: 100%;
+  width: 80%;
   height: 12%;
   display: flex;
 }
 .Section8-part2 {
-  width: 100%;
+  width: 80%;
   height: 90%;
   display: flex;
-}
-.Section8-part2:hover {
-  position: absolute;
-  height: 100%;
-}
-.Section8-part2:hover .overflow-games {
-  margin-top: 52px;
 }
 .angle {
   width: 30px;
@@ -2603,28 +2554,13 @@ span {
   z-index: 5;
   transition: 1s;
 }
-.overflow-box {
-  width: 19%;
-  height: 80%;
-  margin-right: 18px;
-  cursor: pointer;
-}
+
 .opening2 {
   width: 160px;
 }
 .category {
   display: flex;
   transition: 1s;
-}
-.overflow-games {
-  width: 187px;
-  height: 264px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  position: relative;
 }
 .category h2 {
   font-family: sans-serif;
@@ -2697,17 +2633,6 @@ span {
   height: 100%;
   background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
 }
-.Wishlist-button {
-  right: 11px;
-  top: 0;
-  position: absolute;
-  visibility: hidden;
-  transition: 0.2s;
-  border: 2px solid rgba(255, 255, 255, 0);
-  background-color: rgba(22, 21, 21, 0);
-  display: flex;
-  padding-bottom: 0.5%;
-}
 .Wishlist-button:hover ~ .overflow-bg-color {
   visibility: hidden;
 }
@@ -2754,15 +2679,15 @@ span {
   display: none;
 }
 #checkbox7:checked ~ .Section8-part2 .overflow .category {
-  transform: translateX(-75vw);
+  transform: translateX(-78.7vw);
   transition: 1s;
 }
 #checkbox8:checked ~ .Section8-part2 .overflow .category {
-  transform: translateX(-149.8vw);
+  transform: translateX(-157.5vw);
   transition: 1s;
 }
 #checkbox9:checked ~ .Section8-part2 .overflow .category {
-  transform: translateX(-195.2vw);
+  transform: translateX(-205vw);
   transition: 1s;
 }
 #checkbox7:checked ~ .Section8-part1 .row .selector .angle-left #left {
@@ -2848,13 +2773,14 @@ span {
 /* Section9 Start */
 
 .Now-On-The-Epic-Games-Store {
-  width: 76%;
+  width: 100%;
   height: 69vh;
   display: flex;
   z-index: 2;
   margin: 50px auto;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 .Now-On-The-Epic-Games-Store-title {
   color: white;
@@ -2877,24 +2803,14 @@ span {
   transition: 0.2s;
 }
 .Section9-part1 {
-  width: 100%;
+  width: 80%;
   height: 12%;
   display: flex;
 }
 .Section9-part2 {
-  width: 100%;
+  width: 80%;
   height: 90%;
   display: flex;
-}
-.Section9-part2:hover {
-  position: absolute;
-  height: 100%;
-}
-.Section9-part2:hover .overflow-games {
-  margin-top: 54.99px;
-}
-.Section9-part2:hover .category h3 {
-  line-height: 1.333;
 }
 .angle {
   width: 30px;
@@ -2970,25 +2886,10 @@ span {
   z-index: 5;
   transition: 1s;
 }
-.overflow-box {
-  width: 19%;
-  height: 81%;
-  margin-right: 18px;
-  cursor: pointer;
-}
 .category {
   display: flex;
   transition: 1s;
-}
-.overflow-games {
-  width: 187px;
-  height: 264px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  position: relative;
+  width: 100%;
 }
 .category h2 {
   font-family: sans-serif;
@@ -3060,17 +2961,6 @@ span {
   height: 100%;
   background: linear-gradient(to bottom, #ffffff1c, #ffffff1a);
 }
-.Wishlist-button {
-  right: 11px;
-  top: 0;
-  position: absolute;
-  visibility: hidden;
-  transition: 0.2s;
-  border: 2px solid rgba(255, 255, 255, 0);
-  background-color: rgba(22, 21, 21, 0);
-  display: flex;
-  padding-bottom: 0.5%;
-}
 .Wishlist-button:hover ~ .overflow-bg-color {
   visibility: hidden;
 }
@@ -3117,11 +3007,11 @@ span {
   display: none;
 }
 #checkbox10:checked ~ .Section9-part2 .overflow .category {
-  transform: translateX(-75vw);
+  transform: translateX(-78.7vw);
   transition: 1s;
 }
 #checkbox11:checked ~ .Section9-part2 .overflow .category {
-  transform: translateX(-149.8vw);
+  transform: translateX(-157.5vw);
   transition: 1s;
 }
 #checkbox10:checked ~ .Section9-part1 .row .selector .angle-left #left {
@@ -3384,4 +3274,163 @@ footer h3 {
 footer img {
   width: 32px;
   height: 36px;
+}
+
+/* Footer End */
+
+/* Responsive 4k */
+
+@media screen and (min-width: 1441px) {
+  .main-nav {
+    height: 8vh;
+  }
+  .eg-logo {
+    width: 50px;
+  }
+  .nav-border {
+    margin-right: 5px;
+    margin-top: 20px;
+  }
+  .header {
+    width: 63%;
+    height: 62vh;
+  }
+  .cover {
+    width: 81%;
+    height: 100%;
+  }
+  .column {
+    width: 16%;
+  }
+  .title-games-image {
+    width: 60px;
+    height: 80px;
+  }
+  .title-games-text {
+    left: 80px;
+  }
+  #radio1:checked ~ .column .liner1 .title-games-image,
+  #radio2:checked ~ .column .liner2 .title-games-image,
+  #radio3:checked ~ .column .liner3 .title-games-image,
+  #radio4:checked ~ .column .liner4 .title-games-image,
+  #radio5:checked ~ .column .liner5 .title-games-image,
+  #radio6:checked ~ .column .liner6 .title-games-image {
+    -webkit-transition: 200ms cubic-bezier(0.17, 0.17, 0.23, 1);
+    width: 60px;
+    height: 70%;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.17, 0.17, 0.23, 1);
+    transition-delay: 0.5s;
+    transition: 200ms cubic-bezier(0.17, 0.17, 0.23, 1);
+    box-shadow: 0 10px 10px rgba(37, 37, 37, 0.849);
+  }
+  .Fortnite {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+  }
+  .dead-by-daylight {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    visibility: hidden;
+  }
+  .The-Game-Awards {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    visibility: hidden;
+  }
+  .avatar {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    visibility: hidden;
+  }
+  .Homeworld3 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    visibility: hidden;
+  }
+  .destiny2 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    visibility: hidden;
+  }
+  #checkbox1:checked ~ .Section1-part2 .overflow .category {
+    transform: translateX(-79.5vw);
+    transition: 1s;
+  }
+  #checkbox2:checked ~ .Section1-part2 .overflow .category {
+    transform: translateX(-159.5vw);
+    transition: 1s;
+  }
+  #checkbox3:checked ~ .Section1-part2 .overflow .category {
+    transform: translateX(-239.8vw);
+    transition: 1s;
+  }
+  #checkbox4:checked ~ .Section1-part2 .overflow .category {
+    transform: translateX(-271.8vw);
+    transition: 1s;
+  }
+  #checkbox5:checked ~ .Section7-part2 .overflow .category {
+    transform: translateX(-79.5vw);
+    transition: 1s;
+  }
+  #checkbox6:checked ~ .Section7-part2 .overflow .category {
+    transform: translateX(-144vw);
+    transition: 1s;
+  }
+  #checkbox7:checked ~ .Section8-part2 .overflow .category {
+    transform: translateX(-79.5vw);
+    transition: 1s;
+  }
+  #checkbox8:checked ~ .Section8-part2 .overflow .category {
+    transform: translateX(-159.5vw);
+    transition: 1s;
+  }
+  #checkbox9:checked ~ .Section8-part2 .overflow .category {
+    transform: translateX(-207vw);
+    transition: 1s;
+  }
+  #checkbox10:checked ~ .Section9-part2 .overflow .category {
+    transform: translateX(-79.5vw);
+    transition: 1s;
+  }
+  #checkbox11:checked ~ .Section9-part2 .overflow .category {
+    transform: translateX(-159.5vw);
+    transition: 1s;
+  }
+  .Epic-Games-option {
+    width: 75%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+  }
+  footer {
+    width: 100%;
+    height: 52vh;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 72px;
+    padding-bottom: 40px;
+    cursor: default;
+  }
+}
+@media screen and (min-width: 768px) {
 }
