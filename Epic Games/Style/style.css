@@ -4098,6 +4098,9 @@ footer img {
   .Holiday-Sale-Spotlight {
     height: 160vh;
   }
+  .angle {
+    display: none;
+  }
   .Section1-part1 {
     height: 10%;
     padding-left: 30px;
